@@ -1,0 +1,9 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer {
+  background: url('/public/footer.png'), rgba(4, 60, 80, 1);
+  background-blend-mode: color;
+}
