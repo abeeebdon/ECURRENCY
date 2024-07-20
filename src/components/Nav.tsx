@@ -7,16 +7,32 @@ const Nav = () => {
   }
   return (
     <>
-      <NavLink to="/" style={activeState}>
+      <NavLink
+        to="/"
+        style={activeState}
+        className="text-[18px] leading-[27px]"
+      >
         Home
       </NavLink>
-      <NavLink to="/about" style={activeState}>
+      <NavLink
+        to="/about"
+        style={activeState}
+        className="text-[18px] leading-[27px]"
+      >
         About
       </NavLink>
-      <NavLink to="/shop" style={activeState}>
+      <NavLink
+        to="/shop"
+        style={activeState}
+        className="text-[18px] leading-[27px]"
+      >
         Shop
       </NavLink>
-      <NavLink to="/FAQs" style={activeState}>
+      <NavLink
+        to="/FAQs"
+        style={activeState}
+        className="text-[18px] leading-[27px]"
+      >
         FAQs
       </NavLink>
     </>

@@ -20,7 +20,7 @@ function App() {
           <Nav />
         </div>
       )}
-      <main className="mt-[5rem] pt-4">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

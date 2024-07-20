@@ -3,7 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .footer {
-  background: url('/public/footer.png'), rgba(4, 60, 80, 1);
+  background: url('/footer.png'), rgba(4, 60, 80, 0.8);
   background-blend-mode: color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@layer components {
+  .paragraph {
+    @apply text-[16px] leading-[26px] font-normal;
+  }
+  .paragraph-2 {
+    @apply text-[16px] leading-[24px];
+  }
+  .heading {
+    @apply text-[36px] leading-[48px] font-bold;
+  }
 }
