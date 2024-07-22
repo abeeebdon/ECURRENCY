@@ -173,7 +173,7 @@ const Home = () => {
                     {text}
                   </p>
                   <h2 className="paragraph-2  font-bold">{author}</h2>
-                  <div className="flex gap-2 items-center">
+                  <div className="flex gap-2 items-center mt-2">
                     <img src="/images/Star.png" alt="star" />
                     <img src="/images/Star.png" alt="star" />
                     <img src="/images/Star.png" alt="star" />

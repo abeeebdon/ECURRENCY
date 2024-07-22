@@ -57,7 +57,7 @@ const Shop = () => {
       <hr />
       <section className="xs:grid xs:grid-cols-2 md:grid-cols-3 gap-4 my-[60px] w-full max-w-[1109px] mx-auto text-[#4D533C]">
         {reviews.map((review, index) => {
-          const { rating, text, author } = review
+          const { text, author } = review
           return (
             <div
               key={index}
@@ -67,7 +67,13 @@ const Shop = () => {
                 {text}
               </p>
               <h2 className="mt-6 paragraph-2 font-bold mb-2">{author}</h2>
-              <p>{rating}</p>
+              <div className="flex gap-2 items-center">
+                <img src="/images/Star.png" alt="star" />
+                <img src="/images/Star.png" alt="star" />
+                <img src="/images/Star.png" alt="star" />
+                <img src="/images/Star.png" alt="star" />
+                <img src="/images/Star.png" alt="star" />
+              </div>
             </div>
           )
         })}
