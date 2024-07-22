@@ -2,7 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.scroll {
+  scrollbar-width: thin;
+}
 body {
   box-sizing: border-box;
   margin: 0;

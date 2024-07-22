@@ -71,13 +71,13 @@ const Home = () => {
           </article>
         </div>
       </section>
-      <section className="xs:grid xs:grid-cols-2 md:grid-cols-3 gap-4 my-[60px] w-full max-w-[1109px] mx-auto text-[#4D533C]">
+      <section className="flex flex-col p-4 xs:flex-row overflow-auto gap-8 mt-8 scroll">
         {reviews.map((review, index) => {
           const { rating, text, author } = review
           return (
             <div
               key={index}
-              className="border my-4 xs:my-0 bg-white rounded-lg w-full max-w-[306px] p-6 py-10 mx-auto"
+              className="border my-4 xs:my-0 bg-white rounded-lg w-full max-w-[306px] min-w-[300px]  p-6 py-10 mx-auto"
             >
               <p className="italic paragraph h-[110px] sm:h-[90px]">{text}</p>
               <h2 className="mt-6 paragraph-2 font-bold mb-2">{author}</h2>

@@ -26,6 +26,16 @@ export const data: Datas = {
       rating: 5,
       author: 'Eunice Oliver',
     },
+    {
+      text: 'It’s a really good product and helps me sleep better at night!',
+      rating: 5,
+      author: 'Laura Davies',
+    },
+    {
+      text: 'Helps me relax and remember to breathe. Stress level definitely goes down.',
+      rating: 5,
+      author: 'Jane Bocks',
+    },
   ],
   productReview: [
     {
@@ -42,27 +52,15 @@ export const data: Datas = {
     },
     {
       src: 'img1',
-      text: 'It really helps me fall right to sleep compared to melatonin pills.',
+      text: "I've tried a lot of things to sleep but none of those worked, so I tried Cloudy and wow! I sleep like a baby now.",
       rating: 5,
-      author: 'Javier Mendez',
-    },
-    {
-      src: 'img1',
-      text: 'It really helps me fall right to sleep compared to melatonin pills.',
-      rating: 5,
-      author: 'Javier Mendez',
+      author: 'Naomi Nwazurike',
     },
     {
       src: 'img',
-      text: 'Works great! Just use it and then relax, I fall asleep with no problem every time I use it.',
+      text: 'I have been falling asleep faster and sleeping thru the night.',
       rating: 5,
-      author: 'Rachel Dill',
-    },
-    {
-      src: 'img1',
-      text: 'It really helps me fall right to sleep compared to melatonin pills.',
-      rating: 5,
-      author: 'Javier Mendez',
+      author: 'Nate Jacobs',
     },
   ],
   FAQs: [
