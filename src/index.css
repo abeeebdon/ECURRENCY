@@ -15,13 +15,22 @@ body {
   background-position: center;
   background-size: cover;
 }
-
+input:focus {
+  border: none;
+  outline: none;
+}
 @layer components {
   .paragraph {
-    @apply text-[16px] leading-[26px] font-normal;
+    @apply text-[14px] leading-[20px] xs:text-[16px] xs:leading-[26px] font-normal;
+  }
+  .imgs {
+    @apply h-[60vh] md:h-[811px] max-h-[811px] w-full;
   }
   .paragraph-2 {
     @apply text-[16px] leading-[24px];
+  }
+  .heading-2 {
+    @apply text-[18px] leading-[27px];
   }
   .heading {
     @apply text-[36px] leading-[48px] font-bold;

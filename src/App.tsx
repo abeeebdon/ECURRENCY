@@ -13,10 +13,13 @@ function App() {
   const [showNav, setShowNav] = useState<boolean>(false)
 
   return (
-    <div className="poppins">
+    <div className="poppins ">
       <Header showNav={showNav} setShowNav={setShowNav} />
       {showNav && (
-        <div className="flex flex-col gap-8 fixed right-0 bg-slate-600 h-full p-4 w-[50%]">
+        <div
+          className="flex flex-col gap-8 fixed right-0 top-[13%] text-white bg-slate-600 h-full p-4 w-[50%] z-20"
+          onClick={() => setShowNav(false)}
+        >
           <Nav />
         </div>
       )}

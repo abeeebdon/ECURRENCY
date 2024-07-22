@@ -1,11 +1,13 @@
+import { socialMedia } from '../data/Data'
+
 const Footer = () => {
   return (
-    <footer className="footer mt-8 p-4 text-white">
-      <div className="w-full  text-center">
+    <footer className="footer mt-[200px] p-4 text-white">
+      <div className="w-full my-4 text-center">
         <img src="/images/logo2.png" alt="logo" className="mx-auto" />
         <h2>Sleepstiq</h2>
       </div>
-      <article className="grid grid-cols-6 gap-4">
+      <article className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 gap-4 mx-auto">
         <div className="col-span-1">
           <h2>Company</h2>
           <div>
@@ -24,7 +26,7 @@ const Footer = () => {
             <p>Jobs</p>
           </div>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 ">
           <h2>Consumer Advisory</h2>
           <p>
             These statements have not been evaluated by the Food and Drug
@@ -39,12 +41,23 @@ const Footer = () => {
             <a>terms of service.</a>
           </p>
         </div>
-        <hr />
+        <p className="hidden lg:block  min-h-[50px] w-[1px] bg-white"></p>
         <div className="col-span-2">
           <h2>GET IN TOUCH</h2>
           <p>Feel free to get in touch with us vai email</p>
           <h3>hello@sleepstiq.com</h3>
-          <div></div>
+          <div className="flex items-center gap-4 my-4">
+            {socialMedia.map((data) => {
+              return (
+                <div className="p-3 rounded-full bg-[#8FE2FF]">
+                  <img
+                    src={`/icons/${data}.png`}
+                    className="w-[20px] h-[20px]"
+                  />
+                </div>
+              )
+            })}
+          </div>
           <p></p>
         </div>
       </article>
