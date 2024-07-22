@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../components/Button'
 import { data } from '../data/Data'
+import { FaCaretRight } from 'react-icons/fa'
 
 const Home = () => {
   const { logos, reviews, productReview } = data
@@ -51,8 +52,8 @@ const Home = () => {
             Aerolab tick is an interdisciplinary team with a framework that
             fosters candid collaboration.
           </p>
-          <Link to="" className="font-bold paragraph-2">
-            Know more About us
+          <Link to="" className="font-bold paragraph-2 flex items-center">
+            <FaCaretRight /> Know more About us
           </Link>
         </div>
         <div className="text-[#4D533C] w-full py-10 pl-10 max-w-[475px] shadow-2xl bg-[#FBF9F2] mx-auto">
@@ -71,9 +72,9 @@ const Home = () => {
           </article>
         </div>
       </section>
-      <section className="flex flex-col p-4 xs:flex-row overflow-auto gap-8 mt-8 scroll">
+      <section className="flex flex-col p-4 xs:flex-row overflow-auto gap-8 mt-8 scroll w-full max-w-[1109px] mx-auto">
         {reviews.map((review, index) => {
-          const { rating, text, author } = review
+          const { text, author } = review
           return (
             <div
               key={index}
@@ -81,7 +82,13 @@ const Home = () => {
             >
               <p className="italic paragraph h-[110px] sm:h-[90px]">{text}</p>
               <h2 className="mt-6 paragraph-2 font-bold mb-2">{author}</h2>
-              <p>{rating}</p>
+              <div className="flex gap-2 items-center">
+                <img src="/images/Star.png" alt="star" />
+                <img src="/images/Star.png" alt="star" />
+                <img src="/images/Star.png" alt="star" />
+                <img src="/images/Star.png" alt="star" />
+                <img src="/images/Star.png" alt="star" />
+              </div>
             </div>
           )
         })}
@@ -152,9 +159,9 @@ const Home = () => {
         <h2 className="text-[#4D533C] font-bold text-[36px] leading-[46px] px-4">
           Product Reviews
         </h2>
-        <div className=" flex flex-col p-4 xs:flex-row overflow-auto gap-8 mt-8 shadow-2xl">
+        <div className=" flex flex-col p-4 xs:flex-row overflow-auto gap-8 mt-8 shadow-2xl scroll">
           {productReview.map((data, index) => {
-            const { src, text, rating, author } = data
+            const { src, text, author } = data
             return (
               <div
                 className="w-full max-w-[306px] min-w-[300px]  rounded-lg  bg-white border text-[#4D533C] mx-auto"
@@ -162,9 +169,17 @@ const Home = () => {
               >
                 <img src={`/images/${src}.png`} alt="index" />
                 <div className="p-6">
-                  <p className="paragraph  italic mb-5">{text}</p>
+                  <p className="paragraph  italic mb-5 h-[110px] sm:h-[90px]">
+                    {text}
+                  </p>
                   <h2 className="paragraph-2  font-bold">{author}</h2>
-                  <p>{rating}</p>
+                  <div className="flex gap-2 items-center">
+                    <img src="/images/Star.png" alt="star" />
+                    <img src="/images/Star.png" alt="star" />
+                    <img src="/images/Star.png" alt="star" />
+                    <img src="/images/Star.png" alt="star" />
+                    <img src="/images/Star.png" alt="star" />
+                  </div>
                 </div>
               </div>
             )
